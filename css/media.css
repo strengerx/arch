@@ -1,0 +1,26 @@
+@media (min-width:1025px) {
+
+    .foot-rap{
+        display: grid;
+        grid-template-columns: 29% repeat(3, 20%);
+        gap: 50px;
+    }
+    
+    .f-about{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+
+    .serv-rap {
+        /* width: min(80%, 1440px);
+        margin: auto; */
+        display: grid;
+        /* height: 100%;
+        padding: 100px 0px; */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+
+}

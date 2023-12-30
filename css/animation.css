@@ -1,0 +1,194 @@
+/* :root {
+    --color-pry: #ac8c66;
+    --color-black: #000000;
+    --color-white: #ffffff;
+    --color-back-m: #262626;
+    --color-font: #626974;
+    --color-back-s: #ffead1;
+    --ff-pry: 'Teko', sans-serif;
+    --ff-second: 'Barlow', sans-serif;
+    --fonn-altr: 'roboto', sans-serif:
+} */
+
+
+.top li a:hover {
+    overflow: hidden;
+    border-color: var(--color-pry);
+    transition: .5s ease-in-out;
+}
+
+.top li a:hover:after {
+    /* animation: hover .5s ease-in-out forwards; */
+    /* overflow: hidden; */
+    transform: scaleX(1);
+}
+
+/* @keyframes hover {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+} */
+
+
+.s-png:hover {
+    color: var(--color-white);
+    background-color: var(--color-pry);
+    border-color: var(--color-pry);
+}
+
+.box {
+    animation: box 3s ease-in-out forwards;
+    transition: 3s ease-in-out;
+    overflow: hidden;
+}
+
+@keyframes box {
+    0% {
+        left: -100%;
+        opacity: 0;
+
+    }
+
+    100% {
+        left: 0%;
+        opacity: 1;
+    }
+}
+
+
+.icn a:hover {
+    color: var(--color-white);
+    background-color: var(--color-pry);
+    transition: .4s ease-in-out;
+}
+
+.links a:hover {
+    color: var(--color-gry);
+    transition: .3s ease-in;
+}
+
+
+.social-icn {
+    animation: social-icn 3s ease-in-out forwards;
+    overflow: hidden;
+    transition: 3s ease-in-out;
+}
+
+@keyframes social-icn {
+    0% {
+        right: -100%;
+        opacity: 0;
+
+    }
+
+    100% {
+        right: 0%;
+        opacity: 1;
+    }
+}
+
+.ds:hover {
+    transform: scale(1.1);
+
+}
+
+.ds-opct:hover {
+    background-color: rgba(255, 255, 255, .3);
+    opacity: 1;
+}
+
+.s-butn button {
+    transition: .3s ease-in;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.s-butn button:hover {
+    color: var(--color-white);
+}
+
+.s-butn button::after {
+    transition: .3s ease-in;
+}
+
+.s-butn button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-pry);
+    z-index: -1;
+    border-radius: 6px;
+    transform: scaleY(0);
+    transform-origin: top;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.s-butn button:hover::after {
+    transform: scaleY(1);
+}
+
+/* .rt a:hover{
+    animation: bst .8s forwards ease-in;
+  }
+
+  @keyframes bts{
+      0%{
+          opacity: 0;
+          left: 54%;
+      }
+
+      100%{
+          opacity: 1;
+          left: 58%;
+      }
+  } */
+
+
+.rt a:hover::after {
+    animation: bts .3s forwards ease-in;
+}
+
+
+@keyframes bts {
+    0% {
+        opacity: 0;
+        left: 98%;
+    }
+
+    100% {
+        opacity: 1;
+        left: 106%;
+    }
+}
+
+
+.mc ul li a {
+    transition: .2s ease-in;
+}
+
+.mc ul li a:hover {
+    color: var(--color-font);
+    letter-spacing: 1px;
+}
+
+.mc ul li a:hover::after {
+    opacity: 1;
+}
+
+
+.gal:hover:before {
+    opacity: 1;
+}
+
+
+.gal:hover {
+    transform: scale(1.1);
+}
